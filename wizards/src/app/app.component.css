@@ -1,0 +1,31 @@
+.hero-banner {
+    background: url("../assets/images/banner.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    grid-template-rows: 10% 90% 0%;
+    
+}
+
+.hero-banner-card {
+    background: white;
+    color: black;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    opacity: 90%;
+    padding: 20px 30px;
+    /* box-shadow: 0px 0px 2px 1px rgb(99, 99, 99); */
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    color: rgb(55, 55, 55);
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
