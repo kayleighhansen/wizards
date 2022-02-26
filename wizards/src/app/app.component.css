@@ -3,19 +3,81 @@
     background-size: cover;
     height: 100%;
     display: grid;
-    grid-template-columns: 10% 50% 40%;
-    grid-template-rows: 10% 90% 0%;
-    
+    grid-template-columns: 10% 40% 40% 10%;
+}
+
+.card-1 {
+    grid-column: 2/3;
 }
 
 .hero-banner-card {
     background: white;
     color: black;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    opacity: 90%;
     padding: 20px 30px;
-    /* box-shadow: 0px 0px 2px 1px rgb(99, 99, 99); */
+    border-radius: 8px;
+    margin: 20px 00px;
+}
+
+.section-1 {
+    grid-column: 2/4;
+}
+
+.section-2 {
+    background-color: rgb(55, 55, 55);
+    height: 60rem;
+}
+
+.card-3 {
+    grid-column: 2/4;
+    margin-top: 20px;
+}
+
+.card-3 h2 {
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.product-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 40px;
+}
+
+.product-card {
+    margin: 10px;
+    background: #eceef0;
+    box-shadow: none;
+}
+
+.product-card mat-card-title, .product-card mat-card-subtitle {
+    color: black;
+}
+
+.product-card mat-card-title {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.product-card mat-card-subtitle {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.product-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-img {
+    height: 150px;
+}
+
+.mat-card .mat-divider-horizontal  {
+    border-top-color: rgb(131, 131, 131);
+    /* margin-bottom: 20px; */
+    position: static;
+    left: 0;
+    width: 100%;
 }
 
 h1 {
@@ -26,6 +88,37 @@ h1 {
     margin-bottom: 10px;
 }
 
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
+}
+
+.hero-banner-btn {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.btn-accent {
+    background-color: rgb(95, 154, 206);;
+}
+
+.product-btn-container {
+    display: flex;
+    justify-content: center;
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.product-btn-container button {
+    width: 70%;
+    height: 40px;
+    margin-left: auto;
+}
+
+mat-card-actions button {
+    color: black;
 }
